@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+	
+	<meta name="robots" content="index, follow">
+	
+	<meta name="subject" content="문화가 있는 날이란 서브페이지">
+    <meta name="generator" content="brackets, photoshop, illustrator">
+    <meta name="author" content="문화가 있는 날">
+    <meta name="keywords" content="문화, 지원, 혜택, 공연, 영화, 도서관, 문화재, 스포츠">
+    <meta name="description" content="문화가 있는 날 2021년도 홈페이지 리뉴얼">
+    
+    <meta property="og:title" content="문화가 있는 날">
+    <meta property="og:description" content="문화가 있는 날과 함께 해보세요!">
+    <meta property="og:url" content="http://lamuweb.dothome.co.kr/">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    
+     <!--파비콘-->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<title>문화가 있는 날</title>
+	
+	
+	<!--header-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/header.js"></script>
+    
+    
+    <!--benefit-cont-->
+    <script src="js/benefit-cont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	
+	
+	<!--노토산스 웹폰트 cdn-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!--리셋 css-->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--검색 css-->
+	<link rel="stylesheet" href="css/benefit.css">
+	
+    <link rel="stylesheet" href="css/bene-tab.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div clss="bene_container">
+		<header>
+			<div class="inner">
+				<div class="gnb_wrap">
+					<h1><a href="index.html"><img src="img/logo.png" alt="문화가 있는 날 로고"></a></h1>
+					<input type="checkbox" id="menuicon">
+						<label for="menuicon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+					<div class="menuwrap">
+						<nav id="menu">
+							<ul id="gnb">
+								<li class="m"><a href="#none">문화가 있는 날</a>
+									<ul>
+										<li><a href="notice.html" id="noti_sign">문화가 있는 날이란</a></li>
+										<li><a href=#none>로고</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">프로그램</a>
+									<ul>
+										<li><a href=#none>참여 문화시설</a></li>
+										<li><a href="benefit.html" id="bene_sign">이달의 혜택</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">기획사업</a>
+									<ul>
+										<li><a href=#none>지역협력</a></li>
+										<li><a href=#none>자발적 문화활동</a></li>
+										<li><a href=#none>문화시설 참여확대</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">커뮤니티</a>
+									<ul>
+										<li><a href=#none>자료실</a></li>
+										<li><a href=#none>공지사항</a></li>
+										<li><a href=#none>참여후기</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">이벤트</a>
+									<ul>
+										<li><a href=#none>이벤트</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">협력</a>
+									<ul>
+										<li><a href=#none>파트너로 참여하기</a></li>
+										<li><a href=#none>기업협력</a></li>
+									</ul>
+								</li>
+							</ul>
+							<a id="nav_search" href="search.html"><img src="img/search_icon.png"></a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+		<!--경로-->
+		<section class="route">
+				<span><a href="index.html"><img src="img/home_icon.png" alt="홈아이콘">Home</a></span>&gt;
+				<span>메뉴</span> <!--after-->&gt;
+				<span><a href="benefit.html">이달의 혜택</a></span>
+		</section>
+		
+         <!-- Demo header-->
+        <section class="py-5 header">
+           <h1>이달의 혜택 <br><b>2021년도 월 별 문화가 있는 날 혜택</b></h1>
+            <div class="container py-4 bene_inner">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- Tabs nav -->
+                        <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link mb-3 p-3 shadow active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                                <i class="fa fa-user-circle-o mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">1월</span></a>
+
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+                                <i class="fa fa-calendar-minus-o mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">2월</span></a>
+
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">
+                                <i class="fa fa-star mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">3월</span></a>
+
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">4월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">5월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">6월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-7" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">7월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-8-tab" data-toggle="pill" href="#v-pills-8" role="tab" aria-controls="v-pills-9" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">8월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-9-tab" data-toggle="pill" href="#v-pills-9" role="tab" aria-controls="v-pills-9" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">9월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-10-tab" data-toggle="pill" href="#v-pills-10" role="tab" aria-controls="v-pills-10" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">10월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-11-tab" data-toggle="pill" href="#v-pills-11" role="tab" aria-controls="v-pills-11" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">11월</span></a>
+                                
+                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-12-tab" data-toggle="pill" href="#v-pills-12" role="tab" aria-controls="v-pills-12" aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small text-uppercase">12월</span></a>
+                            </div>
+                    </div>
+
+
+                    <div class="col-md-9">
+                        <!-- Tabs content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                <div class="cont_box">
+                                    <a href="#none">
+                                    <img src="img/benefit_img5.png" alt="다담 공연 포스터">
+                                      <div class="hover_line"></div>
+                                        <div class="hover_cont">
+                                            <span class="hover_tit">체험학습 기회 제공</span>
+                                            <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                            </div>
+
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 30% 할인</span>
+                                           <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간<br><b>국립국악원 우면당<br>2021-03-31 ~ 11-24</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">무용</span>
+                                            <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                                <div class="cont_box">
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 30% 할인</span>
+                                           <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간<br><b>국립국악원 우면당<br>2021-03-31 ~ 11-24</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">무용</span>
+                                            <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                                    <div class="cont_box">
+                                        <a href="#none">
+                                          <div class="hover_line"></div>
+                                           <div class="hover_cont">
+                                               <span class="hover_tit">체험학습 기회 제공</span>
+                                               <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                           </div>
+
+                                            <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                            <div class="sub_cont">
+                                                <span class="sub_tit">전시</span>
+                                                <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                            </div>
+                                        </a>
+                                        <a href="#none">
+                                          <div class="hover_line"></div>
+                                           <div class="hover_cont">
+                                               <span class="hover_tit">전석 30% 할인</span>
+                                               <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간 <br> <b>국립국악원 우면당 <br>2021-03-31 ~ 11-24</b></span>
+                                           </div>
+
+                                            <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                            <div class="sub_cont">
+                                                <span class="sub_tit">무용</span>
+                                                <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                            </div>
+                                        </a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                                <div class="cont_box">
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 30% 할인</span>
+                                           <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간 <br> <b>국립국악원 우면당 <br>2021-03-31 ~ 11-24</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">무용</span>
+                                            <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                                <div class="cont_box">
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 30% 할인</span>
+                                           <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간 <br> <b>국립국악원 우면당 <br>2021-03-31 ~ 11-24</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">무용</span>
+                                            <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+                                <div class="cont_box">
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 30% 할인</span>
+                                           <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간 <br> <b>국립국악원 우면당 <br>2021-03-31 ~ 11-24</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">무용</span>
+                                            <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">40% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 SAC '달래이야기' <br> <b>용학도서관 시청각실 <br>2021-06-30</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img4.png" alt="달래이야기 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">영상회</span>
+                                            <span class="sub_stance">대구광역시 수성구 <br><b>달래이야기 영상회</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
+                                <div class="cont_box">
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">40% 할인</span>
+                                           <span class="hover_sub">맥슨달튼, 영화의 순간들 <br> <b>마이아트 뮤지엄 <br>2021-05-03 ~ 07-110</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img1.png" alt="맥슨달튼 전시회 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 강남구 <br><b>맥슨달튼, 영화의 순간들</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">수강료 30% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 '도예체험' <br> <b>용산공예관 <br>2021-05-26 ~ 12-29</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img2.png" alt="문화가 있는 날 도예체험 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">체험</span>
+                                            <span class="sub_stance">서울특별시 용산구 <br><b>문화가 있는 날 도예체험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 50% 할인</span>
+                                           <span class="hover_sub">립, 명! <br> <b>소극장 알과핵 <br>2021-06-30 ~ 07-03</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img3.png" alt="립, 명! 뮤지컬 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">뮤지컬</span>
+                                            <span class="sub_stance">서울특별시 종로구 <br><b>립, 명!</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엌 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">전석 30% 할인</span>
+                                           <span class="hover_sub">다담-차,이야기, <br>우리 음악으로 행복한 시간 <br> <b>국립국악원 우면당 <br>2021-03-31 ~ 11-24</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img6.png" alt="다담 공연 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">무용</span>
+                                            <span class="sub_stance">서울특별시 서초구 <br><b>우리 음악으로 행복한 시간</b></span>
+                                        </div>
+                                    </a>
+                        </div>
+                            </div>
+                            
+                             <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
+                                 <div class="cont_box">
+                                   <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">수강료 30% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 '도예체험' <br> <b>용산공예관 <br>2021-05-26 ~ 12-29</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img2.png" alt="문화가 있는 날 도예체험 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">체험</span>
+                                            <span class="sub_stance">서울특별시 용산구 <br><b>문화가 있는 날 도예체험</b></span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                             <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-9-tab">
+                                 <div class="cont_box">
+                                   <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">수강료 30% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 '도예체험' <br> <b>용산공예관 <br>2021-05-26 ~ 12-29</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img2.png" alt="문화가 있는 날 도예체험 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">체험</span>
+                                            <span class="sub_stance">서울특별시 용산구 <br><b>문화가 있는 날 도예체험</b></span>
+                                        </div>
+                                    </a>
+                                   
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                             <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-10-tab">
+                                 <div class="cont_box">
+                                   <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">수강료 30% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 '도예체험' <br> <b>용산공예관 <br>2021-05-26 ~ 12-29</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img2.png" alt="문화가 있는 날 도예체험 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">체험</span>
+                                            <span class="sub_stance">서울특별시 용산구 <br><b>문화가 있는 날 도예체험</b></span>
+                                        </div>
+                                    </a>
+                                   
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-11-tab">
+                                <div class="cont_box">
+                                   <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">수강료 30% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 '도예체험' <br> <b>용산공예관 <br>2021-05-26 ~ 12-29</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img2.png" alt="문화가 있는 날 도예체험 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">체험</span>
+                                            <span class="sub_stance">서울특별시 용산구 <br><b>문화가 있는 날 도예체험</b></span>
+                                        </div>
+                                    </a>
+                                   
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                             <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-12" role="tabpanel" aria-labelledby="v-pills-12-tab">
+                                <div class="cont_box">
+                                   <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">수강료 30% 할인</span>
+                                           <span class="hover_sub">문화가 있는 날 '도예체험' <br> <b>용산공예관 <br>2021-05-26 ~ 12-29</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img2.png" alt="문화가 있는 날 도예체험 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">체험</span>
+                                            <span class="sub_stance">서울특별시 용산구 <br><b>문화가 있는 날 도예체험</b></span>
+                                        </div>
+                                    </a>
+                                   
+                                    <a href="#none">
+                                      <div class="hover_line"></div>
+                                       <div class="hover_cont">
+                                           <span class="hover_tit">체험학습 기회 제공</span>
+                                           <span class="hover_sub">호이호이 둘리뮤지엄 탐험 <br><b>둘리뮤지엄 <br>2021-03-28 ~ 11-28</b></span>
+                                       </div>
+
+                                        <img src="img/benefit_img5.png" alt="둘리뮤지엄 포스터">
+                                        <div class="sub_cont">
+                                            <span class="sub_tit">전시</span>
+                                            <span class="sub_stance">서울특별시 도봉구 <br><b>호이호이 둘리뮤지엄 탐험</b></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+
+		
+		
+		<footer>
+			<div class="inner clearfix">
+				<h1><img src="img/logo.png" alt="푸터 로고"></h1>
+				<address>
+					<span>개인정보처리방침</span>
+					<span>문의 : 02-739-5261~3 (09:00~18:00)<br> <b>점심시간 12:00~13:00 제외</b></span>
+					<span>ⓒ 지역문화진흥원 ALL RIGHTS RESERVED</span>
+				</address>
+
+				<div class="sns_btn">
+					<a href="https://www.instagram.com/cultureday_kr/" target="_blank"></a>
+					<a href="https://twitter.com/cultureday_kr" target="_blank"></a>
+					<a href="https://www.youtube.com/channel/UCXNQdK60AMeGgIaCHlZho7A" target="_blank"></a>
+					<a href="https://blog.naver.com/pccekorea" target="_blank"></a>
+					<a href="https://www.facebook.com/wdayw/" target="_blank"></a>
+					<a href="https://pf.kakao.com/_mGkLxd" target="_blank"></a>
+				</div>
+
+				<div class="agency">
+					<span>주최<img src="img/public_logo.png"></span>
+					<span>주관<img src="img/local_logo.png"></span>
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

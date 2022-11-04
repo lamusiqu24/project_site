@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+	
+	<meta name="robots" content="index, follow">
+	
+	<meta name="subject" content="문화가 있는 날 메인페이지">
+    <meta name="generator" content="brackets, photoshop, illustrator">
+    <meta name="author" content="문화가 있는 날">
+    <meta name="keywords" content="문화, 지원, 혜택, 공연, 영화, 도서관, 문화재, 스포츠">
+    <meta name="description" content="문화가 있는 날 2021년도 홈페이지 리뉴얼">
+    
+    <meta property="og:title" content="문화가 있는 날">
+    <meta property="og:description" content="문화가 있는 날과 함께 해보세요!">
+    <meta property="og:url" content="http://webpub.dothome.co.kr/03/culture/">
+    <meta property="og:image" content="img/thumbnail.jpg">
+    
+
+    <!--파비콘-->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	
+	<title>문화가 있는 날</title>
+	
+	<!--header-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/header.js"></script>
+
+	<!--mv-->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+	<!--main-contents-->
+	<script src="js/main-cont.js"></script>
+	
+	<!--노토산스 웹폰트 cdn-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!--리셋 css-->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--메인 css-->
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+
+
+<body>
+	<div clss="container">
+		<header>
+			<div class="inner">
+				<div class="skip_nav"><a href="#cont">skip to content</a></div>
+				<div class="gnb_wrap">
+					<h1><a href="index.html"><img src="img/logo.png" alt="문화가 있는 날 로고"></a></h1>
+					<input type="checkbox" id="menuicon">
+						<label for="menuicon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+					<div class="menuwrap">
+						<nav id="menu">
+							<ul id="gnb">
+								<li class="m"><a href="#none">문화가 있는 날</a>
+									<ul>
+										<li><a href="notice.html" id="noti_sign">문화가 있는 날이란</a></li>
+										<li><a href="#none">로고</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">프로그램</a>
+									<ul>
+										<li><a href=#none>참여 문화시설</a></li>
+										<li><a href="benefit.html" id="bene_sign">이달의 혜택</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">기획사업</a>
+									<ul>
+										<li><a href=#none>지역협력</a></li>
+										<li><a href=#none>자발적 문화활동</a></li>
+										<li><a href=#none>문화시설 참여확대</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">커뮤니티</a>
+									<ul>
+										<li><a href=#none>자료실</a></li>
+										<li><a href=#none>공지사항</a></li>
+										<li><a href=#none>참여후기</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">이벤트</a>
+									<ul>
+										<li><a href=#none>이벤트</a></li>
+									</ul>
+								</li>
+								<li class="m"><a href="#none">협력</a>
+									<ul>
+										<li><a href=#none>파트너로 참여하기</a></li>
+										<li><a href=#none>기업협력</a></li>
+									</ul>
+								</li>
+							</ul>
+							<a id="nav_search" href="search.html"><img src="img/search_icon.png"></a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--메인 비주얼-->
+		<div class="mv">
+			<!-- Slider main container -->
+			<div class="swiper-container" style="overflow: hidden;">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+				</div>
+
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+				<div class="mv_box_ex"></div>
+			</div>
+
+            
+            <div class="search">
+                <h3>우리 지역의 <br> <span>문화가 있는 날</span></h3>
+                <form method="get" id="join" name="join" action="join.php" autocomplete="off" novalidate>
+                    <fieldset>
+                        <legend>검색어 입력</legend>
+                        <div class="drop-down">
+						  <div class="selected sel1">
+							<a href="#"><span>시/도</span><img src="img/white_arrow.png"></a>
+						  </div>
+						  <div class="options opt1">
+							<ul>
+							  <li><a href="#">서울특별시<span class="value"></span></a></li>
+							  <li><a href="#">부산광역시<span class="value"></span></a></li>
+							  <li><a href="#">대구광역시<span class="value"></span></a></li>
+							  <li><a href="#">인천광역시<span class="value"></span></a></li>
+							  <li><a href="#">광주광역시<span class="value"></span></a></li>
+							  <li><a href="#">대전광역시<span class="value"></span></a></li>
+							  <li><a href="#">울산광역시<span class="value"></span></a></li>
+							  <li><a href="#">경기도<span class="value"></span></a></li>
+							  <li><a href="#">강원도<span class="value"></span></a></li>
+							  <li><a href="#">충청북도<span class="value"></span></a></li>
+							  <li><a href="#">충청남도<span class="value"></span></a></li>
+							  <li><a href="#">전라북도<span class="value"></span></a></li>
+							  <li><a href="#">전라남도<span class="value"></span></a></li>
+							  <li><a href="#">경상북도<span class="value"></span></a></li>
+							  <li><a href="#">경상남도<span class="value"></span></a></li>
+							  <li><a href="#">제주특별자치도<span class="value"></span></a></li>
+							  <li><a href="#">세종시<span class="value"></span></a></li>
+							</ul>
+						  </div>
+
+						  <div class="selected sel2">
+							<a href="#"><span>구/군</span><img src="img/white_arrow.png"></a>
+						  </div>
+						  <div class="options opt2">
+							<ul>
+							  <li><a href="#">종로구<span class="value"></span></a></li>
+							  <li><a href="#">중구<span class="value"></span></a></li>
+							  <li><a href="#">용산구<span class="value"></span></a></li>
+							  <li><a href="#">성동구<span class="value"></span></a></li>
+							  <li><a href="#">광진구<span class="value"></span></a></li>
+							  <li><a href="#">동대문구<span class="value"></span></a></li>
+							  <li><a href="#">중랑구<span class="value"></span></a></li>
+							  <li><a href="#">성북구<span class="value"></span></a></li>
+							  <li><a href="#">강원도<span class="value"></span></a></li>
+							  <li><a href="#">강북구<span class="value"></span></a></li>
+							  <li><a href="#">도봉구<span class="value"></span></a></li>
+							  <li><a href="#">노원구<span class="value"></span></a></li>
+							  <li><a href="#">은평구<span class="value"></span></a></li>
+							  <li><a href="#">서대문구<span class="value"></span></a></li>
+							  <li><a href="#">마포구<span class="value"></span></a></li>
+							  <li><a href="#">양천구<span class="value"></span></a></li>
+							  <li><a href="#">강서구<span class="value"></span></a></li>
+							  <li><a href="#">구로구<span class="value"></span></a></li>
+							  <li><a href="#">강서구<span class="value"></span></a></li>
+							  <li><a href="#">금천구<span class="value"></span></a></li>
+							  <li><a href="#">영등포구<span class="value"></span></a></li>
+							  <li><a href="#">동작구<span class="value"></span></a></li>
+							  <li><a href="#">관악구<span class="value"></span></a></li>
+							  <li><a href="#">서초구<span class="value"></span></a></li>
+							  <li><a href="#">강남구<span class="value"></span></a></li>
+							  <li><a href="#">송파구<span class="value"></span></a></li>
+							  <li><a href="#">강동구<span class="value"></span></a></li>
+							</ul>
+						  </div>
+						</div>
+
+                        <div class="input_box">
+                            <input type="text" name="search" title="가까운 지역을 검색해보세요" placeholder="가까운 지역을 검색해보세요">
+                            <button type="button">
+                                <img src="img/search_icon2.png">
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+		</div>
+
+		<!--섹션1 zipcon-->
+		<section class="zip_wrap">
+			<div class="inner">
+				<div class="zipcon_title">
+					<h4>온라인 콘서트</h4>
+					<h3><span>‘집콘’</span> 다시보기</h3>
+				</div>
+
+				<div class="zipcon">
+					<div class="inner clearfix">
+						<div class="zipcon_wrap clearfix">
+							<div class="zipcon1">
+								<a href="#none">
+									<img src="img/zipcon1.jpg">
+								</a>
+									<div class="zipcon_txt">
+										<h3>세상에 모든 <span>언성 히어로</span>를 위해</h3>
+										<p>모두에게 힘들었던 2020년,<br>
+										일상 속에 숨어 있는 영웅들을 응원하기 위한<br> 김문정 음악감독, 조형균 뮤지컬 배우, 정소리 배우의 랜선 라이브
+										</p>
+										<div class="view_btn"><a href="#none">보러가기</a></div>
+									</div>
+								
+							</div>
+
+							<div class="zipcon2">
+								<a href="#none">
+									<img src="img/zipcon2.jpg">
+								</a>
+								<div class="zipcon_txt">
+									<h3>세상에 모든 <span>모녀</span>를 위해</h3>
+									<p>너무 가깝기에 오히려 하지 못했던 마음 속 깊은 모녀의 이야기,<br> 가수 양희은과 정인이 함께하는 가을밤</p>
+									<div class="view_btn2"><a href="#none">보러가기</a></div>
+								</div>
+							</div>
+							
+							<div class="zipcon3">
+								<a href="#none">
+									<img src="img/zipcon3.jpg">
+								</a>
+								<div class="zipcon_txt">
+									<h3>인천개항장 <span>근대 음악</span> 쌀롱</h3>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--섹션2 what's new-->
+		<section class="what_new">
+			<div class="inner clearfix">
+			
+			<!-- Slider cont container -->
+			<div class="swiper-container" style="overflow:hidden;">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><img class="poster_img"src="img/poseter_box.png" alt="공연 포스터1"></div>
+					<div class="swiper-slide"><img class="poster_img"src="img/poster_box2.png" alt="공연 포스터1"></div>
+					<div class="swiper-slide"><img class="poster_img"src="img/poster_box3.png" alt="공연 포스터1"></div>
+				</div>
+          
+                <div class="poster_ctrl">
+						<ul>
+							<li class="prev">
+								<a href="#none">
+									<img src="img/prevbtn.png" alt="이전화살표">
+								</a>
+							</li>
+							<li class="pause">
+								<a href="#none">
+									<img src="img/pausebtn.png" alt="정지아이콘">
+								</a>
+							</li>
+							<li class="next">
+								<a href="#none">
+									<img src="img/nextbtn.png" alt="다음화살표">
+								</a>
+							</li>
+						</ul>
+					</div>
+           
+           
+            </div>
+			
+			<!--
+			<div class="wrap swiper-wrapper">
+				<div class="poster">
+					<div class="swiper-slide"><a href="#none"><img class="poster_img"src="img/poseter_box.png" alt="공연 포스터1"></a></div>
+					<div class="swiper-slide"><a href="#none"><img class="poster_img"src="img/poster_box2.png" alt="공연 포스터2"></a></div>
+					<div class="swiper-slide"><a href="#none"><img class="poster_img"src="img/poster_box3.png" alt="공연 포스터3"></a></div>
+				</div>
+					<div class="poster_ctrl">
+						<ul>
+							<li class="prev">
+								<a href="#none">
+									<img src="img/prevbtn.png" alt="이전화살표">
+								</a>
+							</li>
+							<li class="pause">
+								<a href="#none">
+									<img src="img/pausebtn.png" alt="정지아이콘">
+								</a>
+							</li>
+							<li class="next">
+								<a href="#none">
+									<img src="img/nextbtn.png" alt="다음화살표">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				-->
+
+				<div class="new_wrap">
+						<h3>이달의 혜택 <br> <span>What's new</span></h3>
+					<ul class="new_box">
+						<li>
+							<a href="#none">
+								<div class="content">
+									<span class="tit">국악으로 만나는 <b>아세안 음악</b></span>
+									<span class="titsub">국악으로 편곡한  아세안 10개국 전통음악 선보인다.</span>
+									<div class="titsub_wrap">
+									<span class="titsub_box">국악공연</span>
+									<span class="titsub_box">예매할인</span>
+									</div>
+									<span class="titsub_date">2021-05-19 <img src="img/plusicon.png" alt="더보기 아이콘"></span>
+									
+									<div class="hover_d"><span>D</span> -21</div>
+									<div class="hover_btn">
+									&lt; 자세히보기
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="content">
+									<span class="tit">이달의 <br><b>영화가 있는 날</b></span>
+									<span class="titsub">영화 예매 50% 할인</span>
+									<span class="titsub_box"><b>&#91;</b>영화<b>&#93;</b></span>
+									<span class="titsub_box"><b>&#91;</b>예매할인<b>&#93;</b></span>
+									<span class="titsub_date">2021-05-26 <img src="img/plusicon.png" alt="더보기 아이콘"></span>
+									<div class="hover_d"><span>D</span> -21</div>
+									<div class="hover_btn">
+									&lt; 자세히보기
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="content">
+									<span class="tit">하남 <br><b>스포츠 몬스터</b></span>
+									<span class="titsub">이용권 10% 할인</span>
+									<span class="titsub_box"><b>&#91;</b>스포츠<b>&#93;</b></span>
+									<span class="titsub_box"><b>&#91;</b>이용권할인<b>&#93;</b></span>
+									<span class="titsub_date">2021-05-03 <img src="img/plusicon.png" alt="더보기 아이콘"></span>
+									<div class="hover_d"><span>D</span> -21</div>
+									<div class="hover_btn">
+									&lt; 자세히보기
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="content">
+									<span class="tit">국악으로 만나는 <b>아세안 음악</b></span>
+									<span class="titsub">국악으로 편곡한  아세안 10개국 전통음악 선보인다.</span>
+									<span class="titsub_box">국악공연</span>
+									<span class="titsub_box">예매할인</span>
+									<span class="titsub_date">2021-02-03 <img src="img/plusicon.png" alt="더보기 아이콘"></span>
+									<div class="hover_d"><span>D</span> -21</div>
+									<div class="hover_btn">
+									&lt; 자세히보기
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!--섹션3 notice-->
+		<section class="notice clearfix">
+			<div class="inner">
+				<h3>공지사항</h3>
+				<ul class="notice_txt">
+					<li><a href="#none">
+						<p>(공지)<span>2021 문화가 있는 날 '직장 문화배달' 예술단체(예술인) 선정결과 발표</span> <b>2021-05-21</b></p> <!--plus icon after-->
+					</a></li>
+					<p id="noti_line"></p>
+					<li><a href="#none">
+						<p>(발표)<span>2021년 문화가 있는 날 '지역문화우리' 사업 참여 단체 공모 신규 지원 1차 심의 결과 안내  </span> <b>2021-05-11</b></p> <!--plus icon after-->
+					</a></li>
+					<p id="noti_line"></p>
+					<li><a href="#none">
+						<p>(발표)<span>2021년 문화가 있는 날 '지역문화우리' 사업 참여 단체 공모 신규 지원 1차 심의 결과 안내  </span> <b>2021-05-21</b></p> <!--plus icon after-->
+					</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!--섹션4 review-->
+		<section class="review clearfix">
+			<div class="inner">
+				<div class="review_txt">
+					<a href="#none">
+						<h3>참여후기</h3>
+						<p>문화가 있는 날을 이용<br> 하는 많은 문화인들의 <span>후기</span></p>
+					</a>
+            </div>
+            <div class="scroll__container js-filter-container">
+                <div class="scroll__content js-content">
+                    <a href="#none" class="scroll__element js-element">
+						<span id="bar">facebook</span>
+						<span class="scroll_box">몽이 이모티콘 판매해주세요ㅜㅜㅜㅜㅜㅜㅜ<br>사고싶이요ㅜㅜㅜㅜㅜㅜㅜㅜ</span>
+						<img src="img/facebook_logo.png" alt="facebook logo">
+                    </a>
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">10월 30일 거제문화예술회관에서 성악 공연을보고 왔습니다. <br>남성테너 세분이서 재미있는 시간을 보냈습니다 감사합니다.</span><img src="img/twt_logo.png" alt="twt logo">
+                    </a>
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">문화가 있는 날 마지막 주 수요일<br> 잘 이용했습니다 영화</span>
+                        <img src="img/insta_logo.png" alt="insta logo">
+                    </a>
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">몽이 이모티콘 판매해주세요ㅜㅜㅜㅜㅜㅜㅜ<br>사고싶이요ㅜㅜㅜㅜㅜㅜㅜㅜ</span><img src="img/naver_logo.png" alt="naver logo">
+                    </a>
+                </div>
+                <div class="scroll__content js-content">
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">오늘도 영화 재밌게 봤습니다 <br>취미생활 할 수 있게 해주셔서 감사합니다</span><img src="img/insta_logo.png" alt="insta logo">
+                    </a>
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">공연을 처음 보러 갔는데 생각보다 너무 재미있었습니다! <br>사람들에게도 추천해주고 싶었고 다음에는 부모님과...</span><img src="img/naver_logo.png" alt="naver logo">
+                    </a>
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">공연을 처음 보러 갔는데 생각보다 너무 재미있었습니다! <br>사람들에게도 추천해주고 싶었고 다음에는 부모님과...</span><img src="img/facebook_logo.png" alt="facebook logo">
+                    </a>
+                    <a href="#none" class="scroll__element js-element">
+                       <span id="bar">facebook</span>
+                        <span class="scroll_box">몽이 이모티콘 판매해주세요 ㅜㅜㅜㅜㅜㅜㅜ<br>사고싶이요ㅜㅜㅜㅜㅜㅜㅜㅜ</span><img src="img/facebook_logo.png" alt="facebook logo">
+                    </a>
+                </div>
+            </div>
+
+				<p class="reviw_tit"></p>
+			</div>
+		</section>
+
+		<!--푸터-->
+		<footer>
+			<div class="inner clearfix">
+				<h1><img src="img/logo.png" alt="푸터 로고"></h1>
+				<address>
+					<span>개인정보처리방침</span>
+					<span>문의 : 02-739-5261~3 (09:00~18:00)<br> <b>점심시간 12:00~13:00 제외</b></span>
+					<span>ⓒ 지역문화진흥원 ALL RIGHTS RESERVED</span>
+				</address>
+
+				<div class="sns_btn">
+					<a href="https://www.instagram.com/cultureday_kr/" target="_blank"></a>
+					<a href="https://twitter.com/cultureday_kr" target="_blank"></a>
+					<a href="https://www.youtube.com/channel/UCXNQdK60AMeGgIaCHlZho7A" target="_blank"></a>
+					<a href="https://blog.naver.com/pccekorea" target="_blank"></a>
+					<a href="https://www.facebook.com/wdayw/" target="_blank"></a>
+					<a href="https://pf.kakao.com/_mGkLxd" target="_blank"></a>
+				</div>
+
+				<div class="agency">
+					<span>주최<img src="img/public_logo.png"></span>
+					<span>주관<img src="img/local_logo.png"></span>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!--popup-->
+	<div id="popup">
+		<div id="close"><button>close</button></div>
+		<div class="popimg"><a href="#none>"><img src="img/popup.jpg" alt="팝업창"></a></div>
+	</div>
+	
+	<!--topbtn-->
+	<a href="#none" id="top_btn"></a>
+
+</body>
+</html>

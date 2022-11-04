@@ -1,0 +1,402 @@
+/* 문화가 있는 날이란 css */
+
+/*
+사용된 글꼴
+font-family: 'Noto Sans KR', sans-serif;
+
+포인트컬러
+#e83756
+#2b2b2b
+#727171
+*/
+
+html, body {position: relative; height: 100%;}
+
+.container{border:0px solid;}
+
+.inner{border:0px solid yellow; max-width:1500px; margin:0 auto; width:calc(100% - 36px);}
+
+.clearfix:after{content: ""; display: block; clear: both;}
+
+
+/*헤더*/
+header{border: 0px solid blue; background:#fff; height: 80px;}
+
+.skip_nav{ position:absolute; left:0; top : -61px; }
+.skip_nav a{ color :#fff; display :block; padding: 20px 0; font-size:20px; text-align:center; background : #2b2b2b ; width : 100%; }
+
+.gnb_wrap{position: relative;}
+.gnb_wrap h1{position: absolute; top: 28px; margin-left: 80px; z-index: 999;}
+.gnb_wrap h1 a{display:block;}
+.menuwrap{height: 92px; }
+
+
+#gnb {padding-left: 280px; margin-top: 21px; display: inline-block;}
+#gnb:after { content: "";  display: block; clear: both;}
+#gnb .m { float: left; width: 155px; text-align: center; position: relative; margin-right: 40px;}
+#gnb .m:last-child{margin-right: 0;}
+#gnb .m > a { display: block; height: 40px;  line-height: 40px; font-size: 1.4em; color:#727171;}
+#gnb .m.on > a { box-sizing: border-box; color:#fff; background:#2b2b2b; }
+
+#gnb .m ul { position: absolute; left: 0;  top: 40px; width: 100%; background: #2b2b2b; display: none; z-index: 99;}
+#gnb .m ul li a { display: block; color: #fff; padding: 12px 0; border-bottom: 1px solid #333; font-weight: 400;}
+#gnb .m ul li:last-child a{ border: none;}
+
+#menu{position: relative;}
+#nav_search{position: absolute; top: 50%; right: 0; transform: translate(0, -50%); margin-top: 10px;}
+
+input{display: none;}
+
+
+/*경로*/
+
+.route{display: flex; border:0px solid red; font-size: 20px; float: right; margin-top:50px; margin-right: 50px;}
+
+.route span{margin: 0 20px; display: flex; align-items: center;}
+
+.route span:last-child{margin-right: 0;}
+
+.route span a{display: flex; align-items: center;}
+
+.route span a > img{margin-right: 3px;}
+
+
+
+/*문화가 있는 날 소개*/
+
+section h1{font-size: 38px; font-weight: 700; margin-bottom: 50px;}
+
+.noti{clear: both; padding-top: 60px;}
+.noti .inner{position: relative;}
+.noti_box{height: 245px; width: 645px; box-shadow: 0 5px 5px 0 rgb(0 0 0 / 30%); background: #fff; position: absolute; bottom: 0; left: 0; transform: translate(0, -50%); padding: 27px 40px;}
+.noti_tit{font-size: 20px; font-weight: 700; color: #2b2b2b; margin-bottom: 20px; line-height: 1.3;}
+.noti_tit span{font-size: 12px; color: #e83756}
+.noti_txt{font-weight: 700; font-size: 15px; color: #727171; line-height: 1.6;}
+.noti_img{float: right;}
+
+
+ /*분야별로 살펴보기*/
+.cont2{clear: both; padding-top: 150px;}
+.cont2_fl{display: flex; flex-direction: row; justify-content: space-around; align-items: center; margin-top: 200px;}
+.cont2_li li{position: relative; margin-bottom: 50px; width:100%;}
+.cont2_li li:after{content: ""; position: absolute; background: url(../img/sub_arrow.png)no-repeat; height: 10px; width:30px;     right: 0; bottom: 50%; transform: translate(200%, -50%);}
+.cont2_li li:last-child{margin-bottom: 0;}
+.cont2_li li a{height: 70px; background:url(../img/1.png) no-repeat; display:block;}
+.cont2_li li:nth-child(2) a{background:url(../img/2.png) no-repeat;}
+.cont2_li li:nth-child(3) a{background:url(../img/3.png) no-repeat;}
+.cont2_li li:nth-child(4) a{background:url(../img/4.png) no-repeat;}
+.cont2_li li:nth-child(5) a{background:url(../img/5.png) no-repeat;}
+.cont2_li li:nth-child(6) a{background:url(../img/6.png) no-repeat;}
+
+
+.cont2_li li a.on{background:url(../img/1_hover.png) no-repeat -5%;}
+.cont2_li li:nth-child(2) a.on{background:url(../img/2_hover.png) no-repeat -5%;}
+.cont2_li li:nth-child(3) a.on{background:url(../img/3_hover.png) no-repeat -5%;}
+.cont2_li li:nth-child(4) a.on{background:url(../img/4_hover.png) no-repeat -5%;}
+.cont2_li li:nth-child(5) a.on{background:url(../img/5_hover.png) no-repeat -5%;}
+.cont2_li li:nth-child(6) a.on{background:url(../img/6_hover.png) no-repeat -5%;}
+
+
+.cont2_li img{position: absolute; top: 50%; left: 0; transform: translate(0, -50%);}
+.cont2_li #hover{position: absolute; top: 50%; left: 0; transform: translate(0, -50%);}
+
+.cont2_li .txt{display: inline-block; padding-left: 100px;}
+.cont2_fl .tit{font-size: 27px; font-weight: 700; color:#e83756; display: flex; flex-direction: column; margin-bottom: 15px;}
+.cont2_fl .sub_tit{font-size: 20px; color: #2b2b2b;}
+.cont2_fl .sub_tit b{font-size: 15px; color: #727171;}
+
+/*푸터*/
+footer{height: 260px; float:left; width:100%; background: #f4f3f3; font-size:20px; color:#2b2b2b; margin-top: 200px;}
+
+footer .inner{padding-top: 50px;}
+
+footer h1{position: absolute;}
+
+footer address{display: inline-block; padding-left: 200px;}
+
+footer address span{display: block;}
+
+footer address span:first-child{font-size: 27px;}
+
+footer address span:nth-child(2){margin: 15px 0;}
+
+footer address span br{display: none;}
+
+footer address span b{color:#727171;}
+
+footer address span:nth-child(3){font-size: 18px; color: #727171;}
+
+.sns_btn{border:0px solid yellow; width:30%; float:right;}
+
+.sns_btn a{display: inline-block; height: 50px; width:50px; margin-right: 17px; background: url(../img/foot_insta_logo.png) no-repeat;}
+
+.sns_btn a:nth-child(2){background: url(../img/foot_twt_logo.png) no-repeat;}
+.sns_btn a:nth-child(3){background: url(../img/foot_youtube_logo.png) no-repeat;}
+.sns_btn a:nth-child(4){background: url(../img/foot_blog_logo.png) no-repeat;}
+.sns_btn a:nth-child(5){background: url(../img/foot_face_logo.png) no-repeat;}
+.sns_btn a:last-child{background: url(../img/foot_pinter_logo.png) no-repeat;}
+
+.agency{margin-top: 36px; float: right;}
+
+.agency span img{padding: 0 30px 0 20px;}
+
+
+
+/* cumputer */
+@media screen and (max-width: 1500px){
+
+	/*헤더*/
+	
+	#gnb{position: relative;}
+	#gnb .m{width: 11.34vw; margin-right: 0.66vw;}
+    #nav_search img{width:70%;}
+    
+    
+    /*분야별로 살펴보기*/
+    .cont2_fl{justify-content: space-evenly;}
+    .cont2_fl > img{width: 32.23vw;}
+    
+    
+    .cont2_li li{margin-bottom: 4vw;}
+    .cont2_li img{width: 5.56vw;}
+    .cont2_li .txt{padding-left: 6.66vw;}
+    .cont2_fl .tit{font-size: 1.8vw; margin-bottom: 1vw;}
+    .cont2_fl .sub_tit{font-size: 1.33vw;}
+    .cont2_fl .sub_tit b{font-size: 1vw;}
+
+
+	/*푸터*/
+	.sns_btn{width: 30.46vw;}
+	.sns_btn a{margin-right: 0;}
+}
+
+/* big tablet */
+@media screen and (max-width: 1200px){
+
+	/*헤더*/
+	
+	#gnb{padding-left: 24.333vw;}
+	#gnb .m{width: 10.34vw;}
+	#gnb .m > a{font-size: 1em;}
+	#gnb .m ul li a{font-size: 0.8em;}
+    
+    
+    /*분야별로 살펴보기*/
+    .cont2_li .txt{padding-left: 8.66vw;}
+
+
+
+	/*푸터*/
+
+	footer{height: 23.25vw; font-size: 1.66vw;}
+
+	footer .inner{padding-top: 4.16vw;}
+
+	footer address{padding-left: 16.66vw;}
+	footer address span:first-child{    font-size: 2.25vw;}
+	footer address span:nth-child(3){font-size: 1.5vw;}
+
+	.sns_btn{width: 31.46vw;}
+
+	.agency{margin-top: 4.16vw;}
+
+	.sns_btn a{background-size: 90%;}
+	.sns_btn a:nth-child(2){background-size: 90%;}
+	.sns_btn a:nth-child(3){background-size: 90%;}
+	.sns_btn a:nth-child(4){background-size: 90%;}
+	.sns_btn a:nth-child(5){background-size: 90%;}
+	.sns_btn a:last-child{background-size: 90%;}
+}
+
+
+/* tablet */
+@media screen and (max-width: 1024px){
+
+	/*헤더*/
+	
+	.gnb_wrap h1{margin-left: 1.81vw;}
+	#gnb{padding: 0; margin: 0; float: none;}
+	#gnb .m{width: 100%; margin-bottom: 55px;}
+    #gnb .m ul{position: static;}
+	
+	header input {display: block;position: fixed; z-index: 500;border: 0;}
+	.menuwrap {position: fixed; top: 0;right: -500px; z-index:3 ; overflow: auto;width: 48.8vw;height: 100%;padding-top:200px; box-sizing: border-box;transition: left .3s ease-in-out;background-color: #fff;font-size: 23px;}
+	.menuwrap.on {right: 0;}
+	#nav_search{margin-top: 0; top: -150px; left: 30px;}
+	#nav_search img{width:auto;}
+
+
+	input[id="menuicon"]{display:none;}
+	input[id="menuicon"]+label{width:50px; height:30px; position:relative; cursor:pointer; position: absolute; right: 25px; top:28px; z-index: 10;}
+	input[id="menuicon"] + label span{display:block; position:absolute; width:100%; height:3px; border-radius:30px;  background:#2b2b2b; transition:all .35s;}
+	input[id="menuicon"] + label span:nth-child(1){top:0;}
+	input[id="menuicon"] + label span:nth-child(2){top:50%; transform:translateY(-50%);}
+	input[id="menuicon"] + label span:nth-child(3){bottom:0;}
+
+	input[id="menuicon"]:checked + label span{background:#2b2b2b;}
+	input[id="menuicon"]:checked + label span:nth-child(1){top:50%; transform:translateY(-50%) rotate(45deg);}
+	input[id="menuicon"]:checked + label span:nth-child(2){opacity:0;}
+	input[id="menuicon"]:checked + label span:nth-child(3){bottom:50%; transform:translateY(50%) rotate(-45deg)}
+
+	nav_search{right: 100px;}
+    
+    /*문화가 있는 날 소개*/
+    .noti h1{margin-left: 20px;}
+    .noti .inner{width:inherit;}
+    .noti_box{width: 585px; height: 260px; padding: 27px 35px;}
+    .noti_txt br{display: none;}
+    .noti_img{overflow:hidden;}
+    
+    
+    
+    /*분야별로 살펴보기*/
+    
+    section h1{font-size: 3.71vw; margin-bottom: 4.88vw;}
+    
+    .cont2_fl{flex-direction: column; margin-top: 9.76vw;}
+    .cont2_fl > img{width: 43.32vw; margin-bottom: 6.83vw;}
+    
+    
+    .cont2_li .txt{padding-left: 10.66vw;}
+    .cont2_fl .tit{font-size: 2.8vw; margin-bottom: 1vw;}
+    .cont2_fl .sub_tit{font-size: 2.29vw; line-height: 1.3;}
+    .cont2_fl .sub_tit b{font-size: 1.8vw;}
+    
+    .cont2_li li a{height: 8.78vw; display: flex; align-items: center; background-size: 13%; background-position: 1%, 1%;}
+    .cont2_li li:nth-child(2) a{background-size: 13%; background-position: 1%, 1%;}
+    .cont2_li li:nth-child(3) a{background-size: 13%; background-position: 1%, 1%;}
+    .cont2_li li:nth-child(4) a{background-size: 13%; background-position: 1%, 1%;}
+    .cont2_li li:nth-child(5) a{background-size: 13%; background-position: 1%, 1%;}
+    .cont2_li li:nth-child(6) a{background-size: 13%; background-position: 1%, 1%;}
+    .cont2_li li:after{background-size: 70%;}
+    
+    .cont2_li li a.on{background-size: 22%;}
+    .cont2_li li:nth-child(2) a.on{background-size: 22%;}
+    .cont2_li li:nth-child(3) a.on{background-size: 22%;}
+    .cont2_li li:nth-child(4) a.on{background-size: 22%;}
+    .cont2_li li:nth-child(5) a.on{background-size: 22%;}
+    .cont2_li li:nth-child(6) a.on{background-size: 22%;}
+
+	/*푸터*/
+    footer{margin-top: 9.76vw;}
+
+	footer h1 img{width: 12vw;}
+
+	footer address{padding-left: 14.66vw;}
+
+	.agency span{font-size: 1.56vw;}
+
+	.sns_btn{width: 28.46vw;}
+
+	.sns_btn a{width: 4.394vw; height: 4.394vw;}
+	.sns_btn a:nth-child(2){background-size: 90%;}
+	.sns_btn a:nth-child(3){background-size: 90%;}
+	.sns_btn a:nth-child(4){background-size: 90%;}
+	.sns_btn a:nth-child(5){background-size: 90%;}
+	.sns_btn a:nth-child(6){background-size: 90%;}
+
+	.agency span img{padding: 0 0.92vw 0 1.95vw;     width: 20vw;}
+}
+
+/* big mobile */
+@media screen and (max-width: 640px){
+    
+    /*헤더*/
+    #gnb{display: block;}
+	.menuwrap{width: 100%; right: -645px;}
+    input[id="menuicon"]+label{width: 35px; height: 22px; right: 5px;}
+    
+    .route{font-size: 2.125vw; margin-top: 4vw; margin-right: 4.812vw; align-items: center;}
+    .route span{margin: 0 1.125vw;}
+    .route span > img{width: 3vw;}
+    
+    /*문화가 있는 날 소개*/
+    .noti{padding-top: 7.375vw;}
+    .noti_box{width: 90vw; height: 56vw; padding: 4.68vw 7.03vw; left: 5%; bottom: -40%;}
+    
+    .noti_tit{margin-bottom: 2.27vw;}
+    .noti_tit span{font-size: 1.27vw;}
+    .noti_txt{font-size: 2.34vw; line-height: 1.9;}
+    
+    .noti_img{height: 82vw;}
+    .noti_img > img{width: 150vw;}
+    
+    /*분야별로 살펴보기*/
+    
+    .cont2{padding-top:20.375vw;}
+    .cont2_li li{margin-bottom: 7vw;}
+    .cont2_li li:after{background-size: 50%; right: 6%;}
+
+
+	/*푸터*/
+	footer{height: 33.25vw; position: relative; margin-top:12.93vw;}
+	footer .inner{padding-top: 10.16vw;}
+	footer h1{top:2.5vw; left:39.125vw;}
+	footer h1 img{width: 20vw;}
+	footer address{padding: 0; display: block; text-align: center;}
+	footer address span:nth-child(2){margin: 2.25vw 0; font-size: 2.5vw;}
+	footer address span:first-child{display: none;}
+	footer address span:nth-child(3){font-size: 2.5vw;}
+	.sns_btn{float: none; margin:0 auto; margin-top: 1.56vw; width: 29.46vw;}
+	.agency{float: none;
+    text-align: center;
+    margin-top: 2.16vw;}
+
+
+
+
+/* mobile */
+@media screen and (max-width: 375px){
+    
+    /*헤더*/
+    .gnb_wrap h1 a > img{width:26vw;}
+    
+    /*경로*/
+    .route{display: none;}
+    
+    /*문화가 있는 날 소개*/
+    section h1{font-size: 4.71vw;}
+    .noti_box{left: 0; bottom: -76%; width: 100vw; height: 207px; padding: 1.68vw 2.03vw;}
+    .noti_tit{margin-bottom: 3.27vw;}
+    
+    /*분야별로 살펴보기*/
+    .cont2{padding-top: 52.375vw;}
+    .cont2_li li:after{display:none;}
+    .cont2_li li a{height: 15.78vw;}
+    .cont2_li .txt{padding-left: 13.66vw;}
+    .cont2_li li{margin-bottom: 2vw;}
+    
+
+	/*푸터*/
+	footer{height: 63.25vw; margin-top: 7.93vw;}
+	footer .inner{padding-top: 12.16vw;}
+	footer h1{top: 6.5vw;}
+	footer address span:nth-child(2){line-height: 1.8; font-size: 1.5vw; margin: 5.25vw 0;}
+	footer address span:nth-child(3){display: none;}
+	footer address span br{display: block;}
+	.sns_btn{margin-top: 5.56vw; width: 44.46vw;}
+	.sns_btn a{width: 6.394vw; height: 6.394vw;}
+	.agency{margin-top: 3.16vw;}
+}
+
+@media screen and (max-width: 300px){
+    
+    .container{overflow:hidden !important;}
+    
+    /*문화가 있는 날 소개*/
+    .noti{height: 300px;}
+    .noti_box{height: 290px; padding: 2.68vw 9.03vw; bottom: initial; transform: none;}
+    
+    /*분야별로 살펴보기*/
+    section h1{font-size: 6.71vw;}
+    
+    .cont2{padding: 0; margin-top: 43vw;}
+    .cont2_fl{position: relative;}
+    .cont2_fl > img{position: absolute; right: -28%; top: -25%; width: 47.32vw;}
+    
+    
+    
+    .cont2_li li{margin-bottom: 6vw;}
+    .cont2_li li a{height: 20.78vw;}
+    
+}
